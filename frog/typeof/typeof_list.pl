@@ -1,6 +1,5 @@
 :- use_module('_typeof').
 
-
 shorten_list_type([], []).
 shorten_list_type([T], [T]).
 shorten_list_type([T | Ts], Ts0) :-

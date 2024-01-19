@@ -8,7 +8,6 @@
   'if'/1
 ]).
 
-
 run [].
 run [Head | Tail] :- Head, run Tail bind Condition, !, Condition.
 run NoList :- \+ is_list(NoList), NoList bind Condition, !, Condition.

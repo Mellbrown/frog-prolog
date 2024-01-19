@@ -9,7 +9,3 @@
   'typeof_list',
   'typeof_compound'
 ].
-
-
-
-
