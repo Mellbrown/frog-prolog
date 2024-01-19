@@ -6,7 +6,8 @@
 
 :- [
   'typeof_primitive',
-  'typeof_list'
+  'typeof_list',
+  'typeof_compound'
 ].
 
 
