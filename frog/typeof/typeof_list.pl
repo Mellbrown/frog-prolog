@@ -17,4 +17,4 @@ Os typeof Ts :-
 full:([] typeof []).
 full:([O | Os] typeof [T | Ts]) :-
   O typeof T,
-  Os typeof Ts.
+  full:(Os typeof Ts).

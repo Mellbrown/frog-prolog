@@ -1,8 +1,12 @@
 :- use_module('_typeof').
 
 
+
 O typeof T :-
-  \+ is_list(O),
-  O =.. [T0 | Os],
+  (compound(O); var(O)),
+  compound_name_arguments(O, T0, Os),
   full:(Os typeof Ts),
-  T =.. [T0 | Ts].
+  (
+    (compound(T); var(T)), compound_name_arguments(T, T0, Ts);
+    T = T0
+  ).
