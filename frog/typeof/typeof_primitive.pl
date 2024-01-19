@@ -1,4 +1,4 @@
-:- use_module('_typeof').
+:- use_module('__typeof').
 
 O typeof T :-
   (

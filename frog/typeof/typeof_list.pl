@@ -1,4 +1,4 @@
-:- use_module('_typeof').
+:- use_module('__typeof').
 
 shorten_list_type([], []).
 shorten_list_type([T], [T]).
