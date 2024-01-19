@@ -20,3 +20,5 @@ morph A <~ B :- morph A <~> B.
 morph A <~ B :- morph B <~> A.
 
 morph A <~> B :- morph B <~> A.
+
+morph A ~> C:- morph A ~> B, morph B ~> C.
