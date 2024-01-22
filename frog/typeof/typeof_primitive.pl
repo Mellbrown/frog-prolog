@@ -3,11 +3,11 @@
 O typeof T :-
   (
     var(O), T = var;
-    O = true, T = boolean;
-    O = false, T = boolean;
-    integer(O), T = integer;
-    float(O), T = float;
-    atom(O), T = atom;
-    string(O), T = string
+    O = true, T = bol;
+    O = false, T = bol;
+    integer(O), T = int;
+    float(O), T = flt;
+    atom(O), T = atm;
+    string(O), T = str
   ), 
   !.
