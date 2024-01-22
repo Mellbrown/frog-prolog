@@ -1,7 +1,5 @@
 :- use_module(h/'morph.h').
 
-:- ['implict'].
-
 :- multifile (morph)/1.
 :- table (morph)/1.
 :- table (~>)/2.
@@ -25,16 +23,16 @@ morph A <~ B :- morph A <~> B.
 morph A <~> B :- morph A ~> B, morph A <~ B.
 morph A <~> B :- morph B <~> A.
 
-implict morph X :- morph X.
-implict morph A ~> C :-
-  nonvar(A),
-  implict morph A ~> B, A \= B,
-  implict morph B ~> C, B \= C,
-  A \= C;
-  nonvar(C),
-  implict morph B ~> C, B \= C,
-  implict morph A ~> B, A \= B,
-  A \= C.
+% implict morph X :- morph X.
+% implict morph A ~> C :-
+%   nonvar(A),
+%   implict morph A ~> B, A \= B,
+%   implict morph B ~> C, B \= C,
+%   A \= C;
+%   nonvar(C),
+%   implict morph B ~> C, B \= C,
+%   implict morph A ~> B, A \= B,
+%   A \= C.
 
 morph [] ~> [].
 morph [A] ~> [B] :- 

@@ -2,5 +2,6 @@
   'runable',
   'typeof'/'typeof',
   'morph', 
-  'cast'
+  'cast',
+  'implict'
 ].
