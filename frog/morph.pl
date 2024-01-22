@@ -24,7 +24,6 @@ morph A <~ B :- morph A <~> B.
 morph A <~> B :- morph A ~> B, morph A <~ B.
 morph A <~> B :- morph B <~> A.
 
-
 morph A ~> C :-
   nonvar(A),
   morph A ~> B, A \= B,

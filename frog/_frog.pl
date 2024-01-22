@@ -3,5 +3,6 @@
 :- reexport([
   '_runable',
   '_morph',
-  'typeof'/'_typeof'
+  'typeof'/'_typeof',
+  '_cast'
 ]).

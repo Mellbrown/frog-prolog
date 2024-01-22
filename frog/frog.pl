@@ -1,1 +1,1 @@
-:- [morph].
+:- ['morph', 'cast'].
