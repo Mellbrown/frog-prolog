@@ -3,11 +3,27 @@
 :- multifile (morph)/1.
 :- table (morph)/1.
 :- table (~>)/2.
+:- table (<~)/2.
+:- table (<~>)/2.
 
 
 morph V1 ~> V2 :- var(V1), var(V2), V1 = V2, !.
+morph V1 <~ V2 :- var(V1), var(V2), V1 = V2, !.
+morph V1 <~> V2 :- var(V1), var(V2), V1 = V2, !.
 
 morph A ~> A :- nonvar(A), \+ is_list(A), \+ compound(A).
+morph A <~ A :- nonvar(A), \+ is_list(A), \+ compound(A).
+morph A <~> A :- nonvar(A), \+ is_list(A), \+ compound(A).
+
+morph A ~> B :- morph B <~ A.
+morph A <~ B :- morph B ~> A.
+
+morph A ~> B :- morph A <~> B.
+morph A <~ B :- morph A <~> B.
+
+morph A <~> B :- morph A ~> B, morph A <~ B.
+morph A <~> B :- morph B <~> A.
+
 
 morph A ~> C :-
   nonvar(A),
