@@ -1,5 +1,4 @@
-:- module('typeof', ['typeof'/2]).
-:- reexport('__typeof').
+:- module('typeof.m', ['typeof'/2]).
 
 :- multifile 'typeof'/2.
 :- table 'typeof'/2.

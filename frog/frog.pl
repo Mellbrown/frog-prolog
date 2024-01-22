@@ -1,1 +1,6 @@
-:- ['morph', 'cast'].
+:- [
+  'runable',
+  'typeof'/'typeof',
+  'morph', 
+  'cast'
+].

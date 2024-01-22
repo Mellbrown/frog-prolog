@@ -1,8 +1,6 @@
-:- use_module('_cast').
-:- use_module('typeof'/'_typeof').
-:- use_module('_morph').
+:- use_module(h/'cast.h').
 
-:- ['morph'].
+:- ['typeof'/'typeof', 'morph'].
 
 A cast B typeof T :-
   morph A ~> B,

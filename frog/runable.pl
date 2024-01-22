@@ -1,12 +1,4 @@
-:- module('runable', [
-  op(900, fx, run),
-  op(900, yfx, bind),
-  op(950, xfy, then),
-  op(960, fx, if),
-  'run'/1,
-  'bind'/2,
-  'if'/1
-]).
+:- use_module(h/'runable.h').
 
 run [].
 run [Head | Tail] :- Head, run Tail bind Condition, !, Condition.

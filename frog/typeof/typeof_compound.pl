@@ -1,4 +1,4 @@
-:- use_module('__typeof').
+:- use_module('typeof.h').
 
 O typeof T :-
   (compound(O); var(O)), compound_name_arguments(O, T0, Os),

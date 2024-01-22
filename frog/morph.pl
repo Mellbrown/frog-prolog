@@ -1,4 +1,4 @@
-:- use_module('_morph').
+:- use_module(h/'morph.h').
 
 :- multifile (morph)/1.
 :- table (morph)/1.

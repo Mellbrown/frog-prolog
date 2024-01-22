@@ -1,4 +1,4 @@
-:- use_module('__typeof').
+:- use_module('typeof.h').
 
 O typeof T :-
   (

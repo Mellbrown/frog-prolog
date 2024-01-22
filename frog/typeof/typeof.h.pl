@@ -1,3 +1,3 @@
-:- module('_typeof', [
+:- module('typeof.h', [
   op(850, yfx, 'typeof')
 ]).
