@@ -35,3 +35,4 @@ use Top over X :-
   include(>=(Top), Os0, Os),
   use Os over X.
   
+use no mold X:- use X.
