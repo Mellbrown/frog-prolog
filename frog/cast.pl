@@ -1,9 +1,11 @@
 :- use_module(h/'cast.h').
 
-:- ['typeof'/'typeof', 'morph'].
+:- ['typeof'/'typeof', 'morph', 'def_use'].
+
+:- table 'cast'/2.
 
 A cast B typeof T :-
-  morph A ~> B,
+  use morph A ~> B,
   B typeof T.
 
 % implict A cast B typeof T :-
